@@ -1,5 +1,13 @@
 title: Pages
-structure:
-  root: true
+template: default
+layout: layout
+revisions: false
 route: '{parent_uri}/{slug}'
-propagate: true
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false
