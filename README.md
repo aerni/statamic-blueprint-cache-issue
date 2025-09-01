@@ -37,7 +37,7 @@ Entry::query()
 
 I noticed a similar blueprint caching bug when a blueprint contains a `parent` field. This is the case with stuctured collections or if the blueprint contains a `parent` entries fieldtype.
 
-Check out the `Pages` collection. The title instructions will always read `Entry creating`. Even when editing an existing entry. This is likely the underlying issue as in the theatres collection, as the pages collection is queried by the `parent` entries fieldtype.
+Check out the `Pages` collection. The title instructions will always read `Entry creating`. Even when editing an existing entry. This is likely the underlying issue as in the theatres collection, as the pages collection is queried by the `parent` entries fieldtype. However, the fix provided in https://github.com/statamic/cms/pull/12232 doesn't solve the issue in this scenario.
 
 https://github.com/user-attachments/assets/ad600002-f404-465b-9633-af8d091a8dd6
 
